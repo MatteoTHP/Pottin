@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+     <a href="/gossips/params[id]/"><% gossips.each_with_index do |gossip, index| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %></a>
+  </body>
+</html>
